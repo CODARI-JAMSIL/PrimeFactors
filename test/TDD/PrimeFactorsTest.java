@@ -13,34 +13,26 @@ public class PrimeFactorsTest {
 	
 	@Before
 	public void setUp(){
-		
+		primeFactors = new PrimeFactors();
 	}
 
 	@Test
 	public void of_1_is_none(){
-		primeFactors = new PrimeFactors();
-		
 		assertEquals(Arrays.asList(), primeFactors.of(1));
 	}
 	
 	@Test
 	public void of_2_is_2(){
-		PrimeFactors primeFactors = new PrimeFactors();
-		
 		assertEquals(Arrays.asList(2), primeFactors.of(2));
 	}
 	
 	@Test
 	public void of_3_is_3(){
-		PrimeFactors primeFactors = new PrimeFactors();
-		
 		assertEquals(Arrays.asList(3), primeFactors.of(3));
 	}
 	
 	@Test
 	public void of_4_is_2_2(){
-		PrimeFactors primeFactors = new PrimeFactors();
-		
 		assertEquals(Arrays.asList(2,2), primeFactors.of(4));
 	}
 
